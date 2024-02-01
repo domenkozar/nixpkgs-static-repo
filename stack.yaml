@@ -1,0 +1,6 @@
+resolver: lts-22.6
+packages:
+- .
+extra-deps:
+- sqlite-easy-1.0.1.0
+- migrant-core-0.1.0.3
