@@ -1,6 +1,12 @@
-resolver: lts-22.6
+# 22.7 is 9.6.4
+resolver: lts-22.7
 packages:
 - .
 extra-deps:
 - sqlite-easy-1.0.1.0
 - migrant-core-0.1.0.3
+- text-2.0.2
+
+flags:
+  text:
+    simdutf: false
