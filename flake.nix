@@ -1,6 +1,6 @@
 {
-  inputs.haskellNix.url = "github:input-output-hk/haskell.nix";
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
+  inputs.haskellNix.url = "github:input-output-hk/haskell.nix?ref=angerman/fix-aarch64-musl";
+  inputs.nixpkgs.follows = "haskellNix/nixpkgs-unstable";
   inputs.flake-utils.url = "github:numtide/flake-utils";
 
   outputs = { self, nixpkgs, flake-utils, haskellNix }:
